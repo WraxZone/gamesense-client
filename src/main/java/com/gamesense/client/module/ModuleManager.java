@@ -30,6 +30,7 @@ public class ModuleManager {
         addMod(new AutoWeb());
         addMod(new BedAura());
         addMod(new Blocker());
+        addMod(new Burrow());
         addMod(new CevBreaker());
         addMod(new FastBow());
         addMod(new HoleFill());
