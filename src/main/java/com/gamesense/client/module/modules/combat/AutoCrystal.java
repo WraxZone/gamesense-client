@@ -47,6 +47,12 @@ import java.util.*;
 
 @Module.Declaration(name = "AutoCrystal", category = Category.Combat, priority = 100)
 public class AutoCrystal extends Module {
+    
+    public static AutoCrystal INSTANCE;
+    
+    public AutoCrystal() {
+        INSTANCE = this;
+    }
 
     ModeSetting breakMode = registerMode("Target", Arrays.asList("All", "Smart", "Own"), "All");
     ModeSetting handBreak = registerMode("Hand", Arrays.asList("Main", "Offhand", "Both"), "Main");
