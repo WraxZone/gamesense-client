@@ -7,7 +7,7 @@
 [![version](https://img.shields.io/badge/Dev-2.3.1-orange.svg)](https://github.com/IUDevman/gamesense-client/releases/latest)
 [![discord](https://img.shields.io/badge/Discord-xfgPw63-8080c0)](https://discord.gg/xfgPw63)
 ![build](https://github.com/IUDevman/gamesense-master/workflows/Java%20CI%20with%20Gradle/badge.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/IUDevman/gamesense-client/total)
+![GitHub All Releases](https://img.shields.io/github/downloads/WraxZone/gamesense-client/total)
 [![license](https://img.shields.io/badge/License-GPL_v3.0-white.svg)](https://github.com/lukflug/gamesense-client/blob/master/LICENSE)
 ![minecraft](https://img.shields.io/badge/Minecraft-1.12.2-blue.svg)
 
