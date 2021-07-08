@@ -166,4 +166,18 @@ public class PlayerUtil {
             mc.player.setPosition(newX, mc.player.posY, newZ);
         }
     }
+    
+    public static int findObiInHotbar() {
+        for (int i = 0; i < 9; ++i) {
+            final ItemStack stack = mc.player.inventory.getStackInSlot(i);
+            if (stack != ItemStack.EMPTY && stack.getItem() instanceof ItemBlock) {
+                final Block block = ((ItemBlock) stack.getItem()).getBlock();
+                if (block instanceof BlockEnderChest)
+                    return i;
+                else if (block instanceof BlockObsidian)
+                    return i;
+            }
+        }
+        return -1;
+    }
 }
