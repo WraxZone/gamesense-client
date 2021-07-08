@@ -13,6 +13,9 @@
 
 ***GameSense is now discontinued, please read below...***
 
+
+- Added burrow... for the ones that are still using gamesense :D
+
 > RIP 05-15-2021
 
 
