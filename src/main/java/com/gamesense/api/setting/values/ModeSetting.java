@@ -31,4 +31,9 @@ public class ModeSetting extends Setting<String> implements EnumSetting {
     public String getValueName() {
         return getValue();
     }
+    
+    public boolean is(String name) {
+        return name.equalsIgnoreCase(this.getValue());
+    }
+
 }
