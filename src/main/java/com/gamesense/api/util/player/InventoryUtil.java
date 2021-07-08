@@ -2,6 +2,7 @@ package com.gamesense.api.util.player;
 
 import com.gamesense.client.module.modules.combat.OffHand;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockEnderChest;
 import net.minecraft.block.BlockObsidian;
 import net.minecraft.client.Minecraft;
 import net.minecraft.init.Items;
@@ -147,5 +148,19 @@ public class InventoryUtil {
             }
         }
         return slots;
+    }
+    
+    public static int findHotbarBlock(Class c) {
+        for (int i = 0; i < 9; ++i) {
+            ItemStack stack = InventoryUtil.mc.player.inventory.getStackInSlot(i);
+            if (stack == ItemStack.EMPTY) continue;
+            if (c.isInstance(stack.getItem())) {
+                return i;
+            }
+            if (!(stack.getItem() instanceof ItemBlock) || !c.isInstance(((ItemBlock) stack.getItem()).getBlock()))
+                continue;
+            return i;
+        }
+        return -1;
     }
 }
