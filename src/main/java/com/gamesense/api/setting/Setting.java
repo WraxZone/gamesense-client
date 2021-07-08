@@ -4,7 +4,7 @@ import com.gamesense.client.module.Module;
 
 public abstract class Setting<T> {
 
-    private T value;
+    public T value;
     private final String name;
     private final String configName;
     private final Module module;
