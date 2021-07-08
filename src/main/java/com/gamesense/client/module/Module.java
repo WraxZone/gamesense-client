@@ -130,6 +130,10 @@ public abstract class Module implements Toggleable, KeybindSetting {
             this.bind = bind;
         }
     }
+    
+    public String getDisplayInfo() {
+        return null;
+    }
 
     public String getHudInfo() {
         return "";
